@@ -1,0 +1,118 @@
+ul {
+  list-style: none;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+li {
+  /*background: #f2f2f2;*/
+  /*background: #f4f4f4;*/
+  background: #fff;
+  margin-bottom: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 2px #888888;
+}
+
+li label {
+  width: 100%;
+}
+
+.info {
+  /*text-align: right;*/
+  margin: 20px auto;
+}
+
+.info label {
+  background: #142290;
+  color: #fff;
+  padding: 10px 50px;
+  text-align: right;
+  margin: 20px auto;
+}
+
+.info label .dot {
+  position: absolute;
+  color: #60a826;
+  font-size: 80px;
+  line-height: 0;
+  top: 13px;
+  margin-left: -25px;
+  text-shadow: 1px 1px 1px #000;
+  animation: blink-dot infinite 2s linear;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 35px;
+  margin-left: 39px;
+}
+
+span.ListItemDescription {
+  padding: 10px;
+  width: 100%;
+}
+
+span.priceItem {
+  margin-left: 35px;
+}
+
+.total {
+  /*background: #0059b2;*/
+  background: #142290;
+  color: #fff;
+  padding: 10px 50px;
+}
+
+.totalValue {
+  background: #142290;
+  color: #fff;
+  padding: 10px 100px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.invisible {
+  display: none;
+}
+
+/*checkboxs*/
+.check input[type=checkbox]{
+  display:none; /* Esconde os inputs */
+}
+ 
+.check label {
+  cursor: pointer;
+}
+
+.check input[type="checkbox"] + label:before {
+  border: 1px solid #5D5C5C;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 5px;
+  padding:0;
+  vertical-align: middle;
+  width: 16px;
+  border-radius:4px;
+}
+ 
+.check input[type="checkbox"]:checked + label:before {
+  background: green;
+  color: #FFF;
+  content: "\2713";
+  text-align: center;
+}
+ 
+.check input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+@keyframes blink-dot {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
