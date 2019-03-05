@@ -13,4 +13,4 @@ Caso o navegador não abra sozinho entre nesse endereço [http://localhost:3000]
 
 ### `Pre requisitos`
 
-Ter instalado o NodeJS e o NPM
+Ter o NodeJS e o NPM instalados
